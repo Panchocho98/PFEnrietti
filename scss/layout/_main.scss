@@ -1,0 +1,45 @@
+/* Main body basico general para todas las paginas. */
+
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  body {
+    font-family: Segoe UI,Helvetica,Arial,sans-serif;
+    background-color: #eeeeee;
+    width: 100%;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      padding: 3rem;
+  }
+  }
+  
+  /* Clase Span para el color del titulo. */
+  
+  #titulo {
+    color: rgb(255, 0, 247);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+  }

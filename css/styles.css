@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer basico para todas las paginas. */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-image: linear-gradient(to left, green, rgb(0, 122, 83));
+  border-top: solid 3px rgb(0, 84, 38);
+}
+footer a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: 0.4s;
+}
+footer a:hover {
+  color: #ffffff;
+}
+
+.copy {
+  display: flex;
+  justify-content: left;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(to left, rgb(1, 156, 1), rgb(0, 122, 83));
+  border-bottom: solid 3px rgb(0, 84, 38);
+}
+
+/* Navbar. */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 2rem;
+  list-style: none;
+}
+.navbar li {
+  margin: 1rem;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transition: 0.2s;
+}
+.navbar a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #262525;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+
+/* Hover para la animacion del nav. */
+.logo img {
+  max-width: 8rem;
+  transition: box-shadow 0.3s;
+  transition: transform 0.3s;
+}
+.logo img:hover {
+  background-color: rgb(0, 153, 99);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+
+/* Main body basico general para todas las paginas. */
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body {
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+section h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+/* Clase Span para el color del titulo. */
+#titulo {
+  color: rgb(255, 0, 247);
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+/* Main body de Plantas y cosas generales de esa pagina. */
+.mainplantas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  height: 2200px;
+}
+.mainplantas h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 3rem;
+  margin-bottom: 40px;
+}
+.mainplantas section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.mainplantas img {
+  max-width: 60%;
+  border-radius: 1rem;
+}
+.mainplantas h2 {
+  padding: 3rem;
+}
+
+/* Main body de Cuidados. */
+.maincuidados {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.maincuidados h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.maincuidados p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.video {
+  display: flex;
+  width: 590px;
+  height: 345px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Formulario. */
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+.formulario input[type=text],
+.formulario input[type=email],
+.formulario textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.formulario input[type=submit] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.mainformulario {
+  height: 53rem;
+}
+
+/* Media query para mobile de 768px. */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+  }
+  .navbar li {
+    margin: 0.5rem;
+  }
+  .logo {
+    width: 100px;
+    margin-left: 110px;
+  }
+  main section h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  main section p {
+    height: 500rem;
+  }
+  .mainplantas img {
+    max-width: 100%;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .maincuidados section h1 {
+    font-size: 2rem;
+  }
+  .maincuidados section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .maincuidados .video {
+    margin-top: 4rem;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

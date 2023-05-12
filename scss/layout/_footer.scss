@@ -1,0 +1,26 @@
+/* Footer basico para todas las paginas. */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(to left, green, rgb(0, 122, 83));
+    border-top: solid 3px rgb(0, 84, 38);
+  
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      transition: 0.4s;
+  
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  
+  .copy {
+    display: flex;
+    justify-content: left;
+  }
